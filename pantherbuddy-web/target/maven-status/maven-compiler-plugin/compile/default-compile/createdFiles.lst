@@ -1,0 +1,7 @@
+com\pantherbuddy\web\controller\HomepageBean.class
+com\pantherbuddy\web\controller\RegisterationBean.class
+com\pantherbuddy\web\authorization\AuthFilter.class
+com\pantherbuddy\web\controller\LogoutBean.class
+com\pantherbuddy\web\controller\RecoverPasswordBean.class
+com\pantherbuddy\web\authorization\AuthorizationListener.class
+com\pantherbuddy\web\controller\LoginBean.class

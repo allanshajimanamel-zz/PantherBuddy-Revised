@@ -1,0 +1,6 @@
+com\pantherbuddy\edu\message\service\MessageService.class
+com\test\EJBTestService.class
+com\pantherbuddy\edu\account\util\Role.class
+com\pantherbuddy\edu\account\to\UserTO.class
+com\pantherbuddy\edu\account\service\AccountService.class
+com\pantherbuddy\edu\message\to\MessageTo.class

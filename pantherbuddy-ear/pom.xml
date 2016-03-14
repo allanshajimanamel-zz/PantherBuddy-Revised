@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>pantherbuddy</artifactId>
+		<groupId>com.fiu.edu</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../pantherbuddy/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>pantherbuddy-ear</artifactId>
+	<packaging>ear</packaging>
+
+	<name>pantherbuddy-ear</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+		<finalName>pantherbuddy-ear</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<version>6</version>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<earSourceExcludes>**/application.xml</earSourceExcludes>
+					<generateApplicationXml>true</generateApplicationXml>
+					<modules>
+						<webModule>
+							<groupId>com.fiu.edu</groupId>
+							<artifactId>pantherbuddy-web</artifactId>
+							<!-- <bundleFileName>pantherbuddy-web.war</bundleFileName> -->
+							<contextRoot>/pantherbuddy</contextRoot>
+						</webModule>
+						<ejbModule>
+							<groupId>com.fiu.edu</groupId>
+							<artifactId>pantherbuddy-api</artifactId>
+							<!-- <bundleFileName>pantherbuddy-api.jar</bundleFileName> -->
+						</ejbModule>
+						<ejbModule>
+							<groupId>com.fiu.edu</groupId>
+							<artifactId>pantherbuddy-server</artifactId>
+							<!-- <bundleFileName>pantherbuddy-server.jar</bundleFileName> -->
+						</ejbModule>
+					</modules>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>3.2.1</version>
+				<configuration>
+					<projectNameTemplate>pantherbuddy-0.0.1-SNAPSHOT</projectNameTemplate>
+					<wtpmanifest>true</wtpmanifest>
+					<wtpapplicationxml>true</wtpapplicationxml>
+					<wtpversion>2.0</wtpversion>
+					<wtpContextName>pantherbuddy</wtpContextName>
+					<manifest>${basedir}/src/main/resources/META-INF/MANIFEST.MF</manifest>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.fiu.edu</groupId>
+			<artifactId>pantherbuddy-web</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fiu.edu</groupId>
+			<artifactId>pantherbuddy-server</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>ejb</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.fiu.edu</groupId>
+			<artifactId>pantherbuddy-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>ejb</type>
+		</dependency>
+	</dependencies>
+
+</project>
