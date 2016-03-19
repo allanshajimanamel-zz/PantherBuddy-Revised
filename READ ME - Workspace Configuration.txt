@@ -1,0 +1,36 @@
+Please follow the instructions below to setup eclipse for project code development
+
+1.) Download Wildfly 8.2.0 server.
+2.) Follow instructions at the website - http://balusc.omnifaces.org/2014/10/jsf-22-tutorial-with-eclipse-and-wildfly.html (Follow all instructions)
+3.) Use mojarra library 2.2.9 
+4.) Checkout the project from svn location - trunk/src/pantherbuddy-web
+
+
+5.) Please find below the configuration for the mail server and datasource.
+
+	1. Mail server configuration:
+		Please follow the instructions in the link.
+		http://www.opensiam.com/2014/06/wildfly-8-sending-email-using-gmail.html
+		The socket name is mail-smtp-gmail
+		The email for application is '***********'
+		password is '***********'
+
+	2. Datasource configuration.
+		Please download and install the below
+			MySQL database 5.6
+			MySQL workbench 6.3
+			Connector/ODBC 5.3.5
+			Connector/J 5.1.36
+		Once done follow the instruction in the below link.
+		https://sheemoul.wordpress.com/2014/06/17/configure-mysql-datasource-in-wildfly-8-0/
+		Following the instruction, you need to download the Jar file
+		mysql-connector-java-5.0.4-bin.jar.	A quick google search will get you the jar.
+		NOTE: 
+		For datasource configuration,
+		After setting up the database, please do the following, before doing the things mentioned in the link
+		1. Open MySQL workbench and open the model diagram file "pantherbuddy.mwb".
+		2. Go to database option on the menu bar and select the option for forward engineering.
+		3. Do the configuration to setup the tables of the database.
+
+
+

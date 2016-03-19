@@ -15,4 +15,10 @@ The project "pantherbuddy-api" is the interface between "pantherbuddy-web" and "
 
 The project "pantherbuddy-server" contains the application logic and server and database code.
 
+The project "pantherbuddy-ear" is the ear for the project to be deployed.
+
 The project uses MySQL as its backened database.
+
+The project was configured to use JBoss Wildfly 8.2.1.
+
+
