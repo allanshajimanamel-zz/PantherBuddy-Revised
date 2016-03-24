@@ -7,6 +7,8 @@ b) EJB 3.1
 
 c) JPA 2
 
+<b>This is still a work in progress.</b>
+
 The main project here is "pantherbuddy" which will build all the other projects and update the ear.
 
 The project "pantherbuddy-web" is the web project where all the frontend code is present.
