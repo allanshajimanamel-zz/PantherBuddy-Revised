@@ -9,7 +9,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import com.pantherbuddy.edu.account.entity.User;
-import com.pantherbuddy.edu.account.util.Role;
 
 @Stateless
 @TransactionManagement(TransactionManagementType.CONTAINER)
@@ -29,7 +28,6 @@ public class EjbTest implements EJBTestService {
 		user.setPassword("password");
 		user.setPhoneNumber(new Long("1"));
 		user.setStatus(Boolean.TRUE);
-		user.setRole(Role.ADMIN);
 
 		entityManager.persist(user);
 	}

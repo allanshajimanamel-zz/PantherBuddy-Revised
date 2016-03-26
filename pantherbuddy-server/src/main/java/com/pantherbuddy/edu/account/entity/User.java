@@ -4,15 +4,11 @@ import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-
-import com.pantherbuddy.edu.account.util.Role;
 
 @Entity
 @Table(name = "user", schema="pantherbuddy")
@@ -50,11 +46,6 @@ public class User {
 	@Column(name = "activatetimestamp")
 	@NotNull
 	private Timestamp activationDate;
-
-	@Column(name = "role")
-	@NotNull
-	@Enumerated(EnumType.STRING)
-	private Role role;
 
 	/**
 	 * @return the userId
@@ -166,20 +157,6 @@ public class User {
 	 */
 	public void setActivationDate(Timestamp activationDate) {
 		this.activationDate = activationDate;
-	}
-
-	/**
-	 * @return the role
-	 */
-	public Role getRole() {
-		return role;
-	}
-
-	/**
-	 * @param role the role to set
-	 */
-	public void setRole(Role role) {
-		this.role = role;
 	}
 
 }
