@@ -1,9 +1,9 @@
 # PantherBuddy
 This the implementation of my Advanced Software Engineering Project (Fall 2016) named "PantherBuddy" using : 
 
-a) JSF 2.1 <br>
-b) EJB 3.1 <br>
-c) JPA 2 <br>
+a) <b>JSF 2.1</b> <br>
+b) <b>EJB 3.1</b> <br>
+c) <b>JPA 2</b> <br>
 
 The original prject can be found at https://github.com/allanshajimanamel/PantherBuddy-JSP.<br>
 This is my personal effort to migrate the project to newer more stable, secure and feature rich platform.
@@ -20,12 +20,12 @@ The project uses MySQL 5 as its backened database.<br>
 The project was configured to use JBoss Wildfly 8.2.1.<br>
 
 Major Parts of the project:<br>
-1. Maven build integration. (done) <br>
-2. Backend migration to EJB 3 (done) <br>
-3. JPA implementation (partial - 75%) <br>
+1. <b>Maven</b> build integration. (done) <br>
+2. Backend migration to <b>EJB 3</b> (done) <br>
+3. <b>JPA</b> implementation (partial - 75%) <br>
 4. Session management (done) <br>
 5. Back button security against no session (done) <br>
 6. Configure remote email server to get email session from JNDI (done) <br>
-7. XHTML view developed using JSF 2.0, Omnifaces, MyFaces, Bootstrap integration (partial - 50%) <br>
+7. XHTML view developed using <b>JSF 2.0, Omnifaces, MyFaces and Bootstrap</b> integration (partial - 50%) <br>
 
 
