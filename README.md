@@ -10,6 +10,8 @@ This is my personal effort to migrate the project to newer more stable, secure a
 
 <b>This is still a work in progress.</b>
 
+<b>Please read the document "READ ME - Workspace Configuration.txt" for workspace configuration</b>
+
 The main project here is "pantherbuddy" which will build all the other projects and update the ear.<br>
 The project "pantherbuddy-web" is the web project where all the frontend code is present.<br>
 The project "pantherbuddy-api" is the interface between "pantherbuddy-web" and "pantherbuddy-server".<br>
