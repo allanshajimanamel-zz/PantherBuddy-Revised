@@ -1,11 +1,11 @@
 # PantherBuddy
-This the implementation of my Advanced Software Engineering Project (Fall 2016) named "PantherBuddy" using : 
+This the re-implementation of my Advanced Software Engineering Project (Fall 2016) named "PantherBuddy" using : 
 
 a) <b>JSF 2.1</b> <br>
 b) <b>EJB 3.1</b> <br>
 c) <b>JPA 2</b> <br>
 
-The original prject can be found at https://github.com/allanshajimanamel/PantherBuddy-JSP.<br>
+The original project can be found at https://github.com/allanshajimanamel/PantherBuddy-JSP.<br>
 This is my personal effort to migrate the project to newer more stable, secure and feature rich platform.
 
 <b>This is still a work in progress.</b>
